@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Portal</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Web Portal</h1>
+        <form action="/search" method="POST">
+            <label for="isrc_code">Enter ISRC Code:</label>
+            <input type="text" name="isrc_code" id="isrc_code" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
